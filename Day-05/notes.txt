@@ -1,0 +1,10 @@
+main use case of react is state management.
+it means you are able to manage past current and future states.
+
+State mangement means:- changing from current state to next state.
+
+useState:-is a hook which is used to mantain the states.
+
+const [num, setNum] = useState(0)
+
+  //num is only for reading the value and setNum is for updating the value of num and useState(0) is the initial value of num which is 0 in this case.
