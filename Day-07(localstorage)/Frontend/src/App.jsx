@@ -8,12 +8,17 @@ const App = () => {
   const [Role, setRole] = useState("")
   const [ImageURL, setImageURL] = useState("")
   const [Description, setDescription] = useState("")
-  const [allUsers, setallUsers] = useState([])
+
+  const localUsers= JSON.parse(localStorage.getItem("allusers")) || []
+  const [allUsers, setallUsers] = useState(localUsers)
 
 // this function will handle the form submission and it will add the new user to the allUsers array and then it will reset the form fields
   const handleSubmit = (e) => {
     e.preventDefault()
-    setallUsers([...allUsers, { username, Role, ImageURL, Description }])
+    const oldUsers=([...allUsers])
+    oldUsers.push({ username, Role, ImageURL, Description })
+    setallUsers(oldUsers)
+    localStorage.setItem("allusers",JSON.stringify(oldUsers))
     setusername("")
     setRole("")
     setImageURL("")

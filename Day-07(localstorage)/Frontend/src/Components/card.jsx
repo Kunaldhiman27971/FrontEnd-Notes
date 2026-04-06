@@ -6,7 +6,6 @@ const Card = () => {
       <img
         className='h-20 w-20 rounded-full'
         src="https://images.unsplash.com/photo-1771212952256-31a72d974757?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8" alt="" />
-
       <h1 className='text-xl font-semibold mt-3'>Kun Dhiman</h1>
       <h5 className='text-lg text-blue-500 font-semibold my-3' >Developer</h5>
       <p className='text-small font-medium leading-tight'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, porro.</p>
@@ -15,5 +14,4 @@ const Card = () => {
     </div>
   )
 }
-
 export default Card
